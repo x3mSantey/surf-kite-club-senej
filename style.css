@@ -1,0 +1,1535 @@
+html, body{
+	margin: 0;
+	padding: 0;
+
+	background-color: #fff;
+}
+h4{
+	color: white;
+}
+@font-face{
+	font-family: tSalvacion;
+    src: url(fonts/15194.otf);
+}
+@font-face{
+	font-family: ropaSans;
+    src: url(fonts/12261.ttf);    
+}
+
+.header_conteiner{
+	position: relative;
+
+	width: 100%;
+	height: 55px;
+	
+	background-color: #24292e;
+
+	z-index: 99;
+}
+.header_block{
+	display: flex;
+	position: relative;
+
+	left: 20%;
+	width: 60%;
+	height: 100%;
+
+}
+.menu_block{
+	width: 100%;
+}
+.list_menu{
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+.list_menu li{
+	
+	text-align: center;
+	margin: 17px 0px 1px 1px;
+
+	width: 150px;
+	height: 35px;
+
+	color: white;
+}
+.list_menu a{
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+}
+.serveces_list{
+	display: none;
+	flex-direction: column;
+
+	position: absolute;
+	top: 55px;
+	
+	width: 150px;
+	height: 156px;
+
+	background-color: #24292E;
+}
+.serveces_list a{
+	font-size: 16px;
+	height: 37px;
+	padding-top: 15px;
+}
+.media_list{
+	display: none;
+	flex-direction: column;
+
+	position: absolute;
+	top: 55px;
+	
+	width: 150px;
+	height: 156px;
+
+	background-color: #24292E;
+}
+.media_list a{
+	font-size: 16px;
+	height: 37px;
+	padding-top: 15px;
+}
+
+
+
+
+.media_list a:hover{
+	height: 36px;
+	border-bottom: 1px solid #fff;
+}
+.serveces_list a:hover{	
+	height: 36px;
+	border-bottom: 1px solid #fff;
+}
+.list_menu li:hover{
+	color: #D8D8D8;
+	border-bottom: 3px solid #fff;
+}
+
+
+
+
+
+/*------------------------------------------
+
+
+			Движущаяся картинка
+
+
+------------------------------------------*/
+
+
+.image_conteiner{
+	position: fixed;
+	top: -10%;
+	left: -10%;
+
+	width: 100%;
+	height: 100%;
+
+}
+.back_image{
+	position: relative;
+
+	width: 120%;
+	height: 120%;
+
+	background-image: url("img/ozero_senej.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: 100%;
+    
+    -webkit-box-shadow:
+    inset 0 0 500px #000,
+    inset 0 0 500px #000,
+    inset 0 0 500px #000;
+}
+
+
+
+/*------------------------------------------
+
+
+	Окошко поверх (движущаяся картинка)
+
+
+------------------------------------------*/
+.firstPage{
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+}
+.start_window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+	width: 800px;
+	height: 400px;
+
+    margin-left: -400px;
+    margin-top: -200px;
+	padding: 15px;
+
+	background-color: #2a2d43;
+	border: 1px solid #24292E;
+	box-shadow: 0 0 30px #24292E;
+
+    opacity: 0.9;
+    z-index: 10;
+}
+.sw_head{
+	display: flex;
+	margin-top: 30px;
+}
+.start_window img{
+    width: 45%;
+}
+.sw_head h1{
+	padding-left: 50px;
+	padding-top: 20px;
+
+    color: #fff;
+    text-shadow: 0 0 20px #70587C;
+    font-family: tSalvacion;
+    font-weight: normal;
+    font-size: 36px;
+}
+.start_window h2{
+    text-align: justify;
+	padding: 0 40px 20px 40px;
+    color: #F9F4F5;
+    text-shadow: 0 0 20px #70587C;
+    font-family: ropaSans;
+    font-size: 28px;
+    font-weight: inherit;
+}
+.start_window h3{
+    position: relative;
+    left: 30%;
+
+    width: 40%;
+
+    color: #D8D8D8;
+    text-align: center;
+    font-family: tSalvacion;
+    font-weight: normal;
+    font-size: 24px;
+}
+#here{
+    text-decoration: none;
+    color: red;
+    background-color: #000;
+}
+
+/*------------------------------------------
+
+
+	    Слайдер с видами спорта
+
+
+------------------------------------------*/
+.slider{
+    position: relative;
+
+    width: 100%;
+    height: 1080px;
+    
+    overflow: hidden;
+    z-index: 11;
+}
+.slider_conteiner{
+    position: relative;
+    left: 0vw;
+
+    width: 300vw;
+    height: 1080px;
+}
+.windSurf{
+    position: absolute;
+
+    width: 100vw;
+    height: 1080px;
+
+    background-image: url(img/wind-surfing.jpg);
+    background-repeat: no-repeat;
+	background-position: center;
+    background-size: 100%;
+
+    -webkit-box-shadow:
+    inset 0 0 500px #000,
+    inset 0 0 500px #000,
+    inset 0 0 500px #000;
+}
+.kiteSurf{
+    position: absolute;
+    left: -100vw;
+
+    width: 100vw;
+    height: 1080px;
+
+    background-image: url(img/kiteSurfing.jpg);
+    background-repeat: no-repeat;
+	background-position: center;
+    background-size: 100%;
+
+    -webkit-box-shadow: 
+    inset 0 0 500px #000, 
+    inset 0 0 500px #000, 
+    inset 0 0 500px #000;
+}
+.supSurf{
+    position: absolute;
+    left: -200vw;
+
+    width: 100vw;
+    height: 100%;
+
+    background-image: url(img/sup_boarding.jpg);
+    background-repeat: no-repeat;
+	background-position: center;
+    background-size: 100%;
+
+    -webkit-box-shadow:
+    inset 0 0 500px #000,
+    inset 0 0 500px #000,
+    inset 0 0 500px #000;
+}
+/*------------------------------------------
+
+
+	    Обучение виндсерфинг
+
+
+------------------------------------------*/
+.text_windSurf{
+    position: relative;
+    top: 200px;
+
+    width: 600px;
+    height: 100px;
+
+    background-image: url(img/back_for_text.png);
+    background-repeat: no-repeat;
+	background-position: center;
+    background-size: 100%;
+}
+.text_windSurf h1{
+    font-family: tSalvacion;
+    font-weight: inherit;
+    font-size: 48px;
+    
+    padding: 20px 0 0 20px;
+    color: #F9F4F5;
+    text-shadow: 0 0 20px #70587C;
+}
+.textWind_conteiner{
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    left: 50%;
+    top: 555px;
+
+    width: 1250px;
+
+    margin-left: -625px;
+}
+.textWindBlock{
+    position: relative;
+
+    width: 600px;
+    height: 300px;
+}
+.textWind_block{
+    position: absolute;
+
+    margin-left: 20px; 
+    width: 600px; 
+    height: 300px;
+    transform: skew(20deg);
+    
+    background-color: #24292E;
+    opacity: 0.7;
+}
+.hireSurfing img{
+    position: absolute;
+    left: 300px;
+
+    width: 120px;
+}
+.textWindBlock h3{
+    position: relative;
+    top: 10px;
+    left: 45px;
+    
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;
+}
+#line_one{
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+
+}
+#line_two{
+    position: absolute;
+    top: 85px;
+    left: 80px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+
+}
+
+#line_three{
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+
+}
+
+#line_four{
+    position: absolute;
+    top: 135px;
+    left: 100px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+
+}
+#line_five{
+    position: absolute;
+    top: 160px;
+    left: 110px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+
+}
+/*------------------------------------------
+
+
+	        Прокат виндсерфинг
+
+
+------------------------------------------*/
+.textWindBlock2{
+    position: relative;
+
+    width: 600px;
+    height: 300px;
+}
+.textWind_block2{
+    position: absolute;
+
+    margin-left: 20px; 
+    width: 600px; 
+    height: 300px;
+    transform: skew(20deg);
+    
+    background-color: #24292E;
+    opacity: 0.7;
+}
+.hireSurfing2 img{
+    position: absolute;
+    left: 300px;
+    top: 10px;
+
+    width: 90px;
+}
+.textWindBlock2 h3{
+    position: relative;
+    top: 10px;
+    left: 45px;
+    
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;
+}
+#line2_one{
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#line2_two{
+    position: absolute;
+    top: 85px;
+    left: 80px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#line2_three{
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#line2_four{
+    position: absolute;
+    top: 135px;
+    left: 100px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#line2_five{
+    position: absolute;
+    top: 160px;
+    left: 110px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#line2_six{
+    position: absolute;
+    top: 185px;
+    left: 120px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+
+
+/*------------------------------------------
+
+
+	    Обучение кайтсерфинга
+
+
+------------------------------------------*/
+.text_kiteSurf{
+    position: relative;
+    top: 200px;
+
+    width: 600px;
+    height: 100px;
+
+    background-image: url(img/back_for_text.png);
+    background-repeat: no-repeat;
+	background-position: center;
+    background-size: 100%;
+}
+.text_kiteSurf h1{
+    font-family: tSalvacion;
+    font-weight: inherit;
+    font-size: 48px;
+
+    padding: 20px 0 0 20px;
+    color: #F9F4F5;
+    text-shadow: 0 0 20px #70587C;
+}
+.textKite_conteiner{
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    left: 50%;
+    top: 555px;
+
+    width: 1250px;
+
+    margin-left: -625px;
+}
+.textKiteBlock{
+    position: relative;
+
+    width: 600px;
+    height: 300px;
+}
+.textKite_block{
+    position: absolute;
+
+    margin-left: 20px; 
+    width: 600px; 
+    height: 300px;
+    transform: skew(20deg);
+    
+    background-color: #24292E;
+    opacity: 0.7;
+}
+.hireKiting img{
+    position: absolute;
+    left: 300px;
+
+    width: 120px;
+}
+.textKiteBlock h3{
+    position: relative;
+    top: 10px;
+    left: 45px;
+    
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;
+}
+#lineK_one{
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#lineK_two{
+    position: absolute;
+    top: 85px;
+    left: 80px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#lineK_three{
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#lineK_four{
+    position: absolute;
+    top: 135px;
+    left: 100px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#lineK_five{
+    position: absolute;
+    top: 160px;
+    left: 110px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#lineK_six{
+    position: absolute;
+    top: 185px;
+    left: 120px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+/*------------------------------------------
+
+
+	        Прокат кайтинг
+
+
+------------------------------------------*/
+.textKiteBlock2{
+    position: relative;
+
+    width: 600px;
+    height: 300px;
+}
+.textKite_block2{
+    position: absolute;
+
+    margin-left: 20px; 
+    width: 600px; 
+    height: 300px;
+    transform: skew(20deg);
+    
+    background-color: #24292E;
+    opacity: 0.7;
+}
+.hireKiting2 img{
+    position: absolute;
+    left: 300px;
+    top: 10px;
+
+    width: 120px;
+}
+.textKiteBlock2 h3{
+    position: relative;
+    top: 10px;
+    left: 45px;
+    
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;
+}
+#lineK2_one{
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#lineK2_two{
+    position: absolute;
+    top: 85px;
+    left: 80px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#lineK2_three{
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#lineK2_four{
+    position: absolute;
+    top: 135px;
+    left: 100px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#lineK2_five{
+    position: absolute;
+    top: 160px;
+    left: 110px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+/*------------------------------------------
+
+
+	    Обучение сапу
+
+
+------------------------------------------*/
+.text_supSurf{
+    position: relative;
+    top: 200px;
+
+    width: 600px;
+    height: 100px;
+
+    background-image: url(img/back_for_text.png);
+    background-repeat: no-repeat;
+	background-position: center;
+    background-size: 100%;
+}
+.text_supSurf h1{
+    font-family: tSalvacion;
+    font-weight: inherit;
+    font-size: 48px;
+    
+    padding: 20px 0 0 20px;
+    color: #F9F4F5;
+    text-shadow: 0 0 20px #70587C;
+}
+.textSup_conteiner{
+    display: flex;
+
+    position: relative;
+    left: 50%;
+    top: 555px;
+
+    width: 600px;
+
+    margin-left: -200px;
+}
+
+.textSupBlock{
+    position: relative;
+    left: 40%;
+
+    width: 500px;
+    height: 300px;
+
+    margin-left: -350px;
+}
+.textSup_block{
+    position: absolute;
+
+    margin-left: 20px; 
+    width: 600px; 
+    height: 300px;
+    transform: skew(20deg);
+    
+    background-color: #24292E;
+    opacity: 0.7;
+}
+.hireSup img{
+    position: absolute;
+    left: 300px;
+
+    width: 120px;
+}
+.textSupBlock h3{
+    position: relative;
+    top: 10px;
+    left: 45px;
+    
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;
+}
+#lineS_one{
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#lineS_two{
+    position: absolute;
+    top: 85px;
+    left: 80px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#lineS_three{
+    position: absolute;
+    top: 110px;
+    left: 90px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#lineS_four{
+    position: absolute;
+    top: 135px;
+    left: 100px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+#lineS_five{
+    position: absolute;
+    top: 160px;
+    left: 110px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: ropaSans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9F4F5;
+}
+/*------------------------------------------
+
+
+        Кнопки переключающрие слайдер
+
+
+------------------------------------------*/
+.buttons_conteiner{
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    top: -85px;
+    left: 50%;
+    
+    width: 1250px;
+    height: 40px;
+
+    margin-left: -552px;
+
+    z-index: 12;
+}
+.button1{
+    position: relative;
+
+    margin-left: 20px; 
+    width: 600px; 
+    height: 40px;
+    transform: skew(20deg);
+
+    border-bottom-left-radius: 10px;
+    border-top: 1px solid #FC1717;
+    background-color: #24292E;
+    opacity: 0.7;
+
+    cursor: pointer;
+}
+.button2{
+    position: relative;
+    left: 20px;
+
+    margin-left: 20px; 
+    width: 600px; 
+    height: 40px;
+    transform: skew(20deg);
+
+    border-bottom-left-radius: 10px;
+    border-top: 1px solid #FC1717;
+    background-color: #24292E;
+    opacity: 0.7;
+
+    cursor: pointer;
+}
+.cursor1{
+    position: relative;
+    top: 10px;
+    left: 25px;
+
+    width: 0; 
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 20px solid #333A41;
+    border-bottom: 10px solid transparent;
+}
+.cursor2{
+    position: relative;
+    top: 10px;
+    left: 30px;
+
+    width: 0; 
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid #333A41;
+    border-bottom: 10px solid transparent;
+}
+.button1:hover{
+    opacity: 0.9;
+}
+.button2:hover{
+    opacity: 0.9;
+}
+.cursor1:hover{
+    border-top: 10px solid transparent;
+    border-right: 20px solid #fff;
+    border-bottom: 10px solid transparent;
+}
+.cursor2:hover{
+    border-top: 10px solid transparent;
+    border-left: 20px solid #fff;
+    border-bottom: 10px solid transparent;
+}
+/*------------------------------------------
+
+
+                Блок с картой
+
+
+------------------------------------------*/
+.map_block{
+    position: relative;
+    left: 20vw;
+    top: -44px;
+
+    width: 60vw;
+    height: 750px;
+}
+.mapConteinerBack{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #24292E;
+    opacity: 0.9;
+}
+.map_block h1{
+    position: absolute;
+    left: 10vw;
+
+    width: 40vw;
+
+    color: #fff;
+    font-family: tSalvacion;
+    font-weight: normal;
+    font-size: 42px;
+    text-align: center;
+    
+    border-bottom: 1px solid #FC1717;
+}
+.map{
+    position: relative;
+    top: 150px;
+    left: 5vw;
+
+    width: 50vw;
+    height: 500px;
+
+}
+/*------------------------------------------
+
+
+                Блок с контактами
+
+
+------------------------------------------*/
+.contactInfo{
+    position: relative;
+    left: 20vw;
+    top: -49px;
+
+    width: 60vw;
+    height: 800px;
+}
+.contactConteinerBack{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #24292E;
+
+    opacity: 0.9;
+}
+.headerContacts{
+    position: relative;
+    top: 50px;
+    left: 10%;
+
+    width: 80%;
+}
+.headerContacts h1{
+    text-align: center;
+    color: #ECE7E9;
+    font-family: tSalvacion;
+    font-weight: normal;
+    font-size: 42px;
+    
+    border-bottom: 1px solid #FC1717;
+}
+.contactBlock{
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    top: 100px;
+    left: 5vw;
+
+    width: 50vw;
+    height: 500px;
+}
+.contact{
+    position: relative;
+
+    width: 45%;
+    height: 100%;
+
+}
+.contactBack{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #24292e;
+    opacity: 0.5;
+}
+.contact img{
+    position: relative;
+    top: 20px;
+    left: 30%;
+
+    width: 40%;
+    height: 240px;
+
+    box-shadow: 0 0 10px #e59500;
+}
+.contactTextBlock{
+    position: relative;
+    left: 5%;
+    top: 30px;
+
+    width: 90%;
+    height: 210px;
+
+    border-top: 1px solid #FC1717;
+    border-bottom: 1px solid #FC1717;
+
+    background: linear-gradient(90deg, rgba(132,0,50,0) 0%, rgba(132,0,50,0.15) 10%, rgba(132,0,50,0.35) 27%, rgba(132,0,50,0.65) 50%, rgba(132,0,50,0.35) 73%, rgba(132,0,50,0.15) 90%, rgba(132,0,50,0) 100%);
+}
+.contactTextBlock h2{
+    color: #ECE7E9;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: ropaSans;
+}
+.contactTextBlock p{
+    color: #ECE7E9;
+    padding: 0 15px 0 15px;
+    font-family: ropaSans;
+}
+/*------------------------------------------
+
+
+                Блок с контактами
+
+
+------------------------------------------*/
+.videoConteiner{
+    position: relative;
+    left: 20vw;
+
+    width: 60vw;
+    height: 830px;
+
+}
+.videoConteinerBack{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #24292E;
+
+    opacity: 0.9;
+}
+.videoConteiner h1{
+    position: relative;
+    left: 10%;
+    top: 50px;
+
+    width: 80%;
+
+    color: #F9F4F5;
+    font-family: tSalvacion;
+    font-size: 42px;
+    font-weight: inherit;
+
+    border-bottom: 1px solid #FC1717;
+}
+.videoConteiner p{
+    position: relative;
+    top: 50px;
+    left: 10%;
+
+    width: 80%;
+
+    color: #F9F4F5;
+    font-family: ropaSans;
+    font-size: 26px;
+}
+.bigVideo{
+    position: relative;
+    left: 10%;
+    top: 100px;
+
+    width: 80%;
+    height: 500px;
+
+    box-shadow: 0 0 20px #000;
+}
+/*------------------------------------------
+
+
+                Блок со слайлером
+
+
+------------------------------------------*/
+.photoConteiner{
+    position: relative;
+    top: -26px;
+    left: 20vw;
+
+    width: 60vw;
+    height: 1280px;
+}
+.photoConteinerBack{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #24292E;
+    opacity: 0.9;
+}
+.photoConteiner h1{
+    position: relative;
+    left: 10%;
+    top: 50px;
+
+    width: 80%;
+
+    color: #ECE7E9;
+
+    font-family: tSalvacion;
+    font-weight: inherit;
+    font-size: 42px;
+    z-index: 12;
+    
+    border-bottom: 1px solid #FC1717;
+}
+.bigPhoto{
+    display: flex;
+    justify-content: space-around;
+
+    position: relative;
+    left: 15%;
+    top: 80px;
+
+    width: 70%;
+    height: 700px;
+}
+.bigPhoto img{
+    height: 100%;
+
+    box-shadow: 0 0 20px #000;
+}
+.sliderConteiner{
+    position: relative;
+    top: 150px;
+
+    width: 100%;
+    height: 300px;
+
+    overflow: hidden;
+}
+.sliderBack{
+    position: absolute;
+
+    width: 100%;
+    height: 280px;
+
+    background-color: #2a2d43;
+}
+.widowSlider{
+    position: relative;
+
+    width: 100%;
+    height: 280px;
+}
+.windowPhotos{
+    display: flex;
+
+    position: relative;
+
+    height: 100%;
+    width: 5160px;
+
+    background-color: #2a2d43;
+}
+.leftBorder{
+    position: absolute;
+    left: 0px;
+
+    width: 15px;
+    height: 100%;
+
+    background-color: #2a2d43;
+    
+    z-index: 11;
+}
+.rightBorder{
+    position: absolute;
+    right: 0px;
+    
+    width: 15px;
+    height: 100%;
+
+    background-color: #2a2d43;
+    
+    z-index: 11;
+}
+.windowPhotos img{
+    margin: 15px 15px 15px 15px;
+    height: 250px;
+
+    cursor: pointer;
+}
+.lineButton{
+    position: relative;
+    top: 5px;
+    left: 5%;
+
+    width: 90%;
+    height: 10px;
+
+    background-color: #000;
+    border-radius: 10px;
+
+    opacity: 0.5;
+}
+.sliderButton{
+    position: relative;
+
+    width: 5%;
+    height: 10px;
+    
+    background-color: #840032;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+.lineButton:hover{
+    opacity: 0.9;
+}
+.sliderButton:hover{
+    box-shadow: 0 0 5px #fff;
+}
+#i2FWeykExGwI:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+#i3bxwa1NrOi4:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+#i56G2vIVcdtA:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+#i84JZzW7ckVU:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+#iAzLdv_Kjaq4:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+#ie6swjDJIR_E:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+#igKcwT903nZM:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+#iNFb97qlCt4w:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+#iPuF5r8m9vTY:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+#itc-vC0wvzVE:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+#i_FTCWfK9S_I:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+#iVEh6KP97I7Q:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+#ix7pVNyxvBdY:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+#iXgNdXXjba30:hover{
+    margin: 20px 20px 20px 20px;
+	height: 240px;
+}
+
+/*------------------------------------------
+
+
+                Футер - подвал
+
+------------------------------------------*/
+.footerConteiner{
+    position: relative;
+
+    width: 100%;
+    height: 55px;
+
+    background-color: #24292e;
+    border-top: 1px solid #FC1717;
+
+    z-index: 99;
+}
+.socialBlock{
+    display: flex;
+
+    position: absolute;
+    top: 0px;
+    left: 32.5%;
+
+    width: 35%;
+    height: 55px;
+}
+.socialBlock h3{
+    width: 70%;
+    height: 45px;
+
+    margin: 10px 0 0 15px ;
+    padding-right: 10px;
+
+    font-family: ropaSans;
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+.iconsBlock{
+    display: flex;
+    justify-content: space-around;
+
+    width: 30%;
+}
+.instagramIcon img{
+    margin: 7.5px;
+    height: 40px;
+}
+.vkIcon img{
+    margin: 7.5px;
+    height: 40px;
+}
+.youTubeIcon img{
+    margin: 2.5px;
+    height: 50px;
+}
